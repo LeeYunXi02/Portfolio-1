@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Car Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Lee Yun Xi</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="powerbi_car.html">Car RegistrationDashboard</a></li>
+					
+						</ul>
+					</nav>
+
+				<!-- Main -->
+<<div id="main">
+    <div class="inner">
+
+        <!-- Title -->
+        <h1>Malaysia Car Market Analytics Dashboard</h1>
+
+        <!-- Dashboard Image -->
+        <span class="image main">
+            <img src="images/powerbi_car_dashboard.png" alt="Malaysia Car Dashboard" />
+        </span>
+
+        <!-- Section: Overview -->
+        <h2>Project Overview</h2>
+        <p>
+            This dashboard analyzes Malaysia’s automotive market using official car registration data 
+            from <strong>data.gov.my</strong> and <strong>car price data scraped using ChatGPT</strong>. 
+            The project demonstrates end-to-end data preparation, data modelling, DAX measure creation, 
+            and interactive visual storytelling with Power BI.
+        </p>
+
+        <!-- Section: Maximum Car Prices -->
+        <h2>Maximum Car Prices by Model</h2>
+        <p>
+            The dashboard highlights the <strong>highest recorded prices</strong> across major manufacturers 
+            such as BYD, Proton, Honda, and Perodua.  
+            This helps users quickly identify premium models and understand how EVs, sedans, SUVs, 
+            and compact cars compare across price segments.
+        </p>
+        <p>
+            The pricing data also reveals how <strong>EV models (especially BYD)</strong> occupy the upper end 
+            of the price spectrum, showing the shift towards high-value electric vehicles entering Malaysia’s market.
+        </p>
+
+        <!-- Section: Fuel Type & Colour Preferences -->
+        <h2>Fuel Type & Colour Preferences</h2>
+        <p>
+            The dashboard presents a breakdown of car registrations by <strong>colour</strong> and, where applicable, 
+            <strong>fuel category</strong> (EV vs petrol).  
+            Key observations include:
+        </p>
+        <ul>
+            <li>White, silver, and black remain the most dominant colours nationwide.</li>
+            <li>EV models tend to favour neutral or futuristic colour themes.</li>
+            <li>Compact cars show the widest colour variation, especially in Perodua models.</li>
+        </ul>
+        <p>
+            These insights help manufacturers and marketers better understand consumer preferences.
+        </p>
+
+        <!-- Section: Trend Analysis -->
+        <h2>Trend Analysis by Year, Quarter & Month</h2>
+        <p>
+            Time-series visuals track how each car brand performs from <strong>2020 to 2025</strong>.  
+            This includes monthly and quarterly seasonality patterns.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Perodua leads consistently</strong> across all years, with strong peaks during promotional seasons.
+            </li>
+            <li>
+                <strong>Honda and Proton</strong> show stable performance with noticeable increases during new model launches.
+            </li>
+            <li>
+                <strong>BYD</strong> appears only in the more recent years, reflecting EV growth.
+            </li>
+            <li>
+                End-of-year spikes suggest increased buying activity due to sales events and tax incentives.
+            </li>
+        </ul>
+
+        <!-- Section: Dashboard Components -->
+        <h2>Dashboard Summary: What You Can Explore</h2>
+        <ul>
+            <li>Price comparisons across car models and brands</li>
+            <li>Car colour popularity across Perodua, Proton, Honda, and BYD</li>
+            <li>Trend lines showing the evolution of car registrations</li>
+            <li>Interactive slicers to filter by brand and model</li>
+            <li>Clean pricing table for reference</li>
+        </ul>
+
+        <!-- Section: Detailed Pricing Table -->
+        <h2>Detailed Pricing & Variants Table</h2>
+        <p>
+            The table on the right side of the dashboard provides a <strong>clean and structured view 
+            of car models, their prices, and the year released</strong>.
+        </p>
+        <p>
+            This allows quick cross-comparison between:
+        </p>
+        <ul>
+            <li>New EV models (BYD Dolphin, Sealion 7, Atto 3)</li>
+            <li>Popular compact cars (Axia, Bezza, Myvi)</li>
+            <li>Proton’s recent lineup (Persona, S70, X50, X70)</li>
+            <li>Honda’s mid-range sedan and hatchback models</li>
+        </ul>
+        <p>
+            Users can instantly spot price gaps and market positioning across brands.
+        </p>
+
+        <!-- Section: Data Cleaning -->
+        <h2>Data Cleaning & Modelling Workflow</h2>
+        <p>The project required extensive ETL and DAX work including:</p>
+        <ul>
+            <li>Normalising inconsistent car model names</li>
+            <li>Cleaning missing and duplicated records</li>
+            <li>Creating a DAX calendar table (Year, Quarter, Month)</li>
+            <li>Merging registration data with scraped pricing data</li>
+            <li>Building measures such as Min Price, Max Price, and Registration Counts</li>
+        </ul>
+
+        <!-- Section: Skills -->
+        <h2>Tools, Techniques & Skills Showcased</h2>
+        <p>This project demonstrates a full suite of data analytics skills:</p>
+        <ul>
+            <li><strong>Power BI</strong> — interactive dashboards, DAX, modelling</li>
+            <li><strong>Power Query</strong> — ETL, data merging, transformation pipelines</li>
+            <li><strong>Data Storytelling</strong> — converting raw data into insights</li>
+            <li><strong>Web Scraping with ChatGPT</strong> — automated collection of car pricing data</li>
+            <li><strong>GitHub Pages</strong> — hosting analytics projects online</li>
+            <li><strong>Business Insight Interpretation</strong> — understanding market behaviour</li>
+        </ul>
+
+        <!-- Section: Purpose -->
+        <h2>Purpose of the Project</h2>
+        <p>
+            This dashboard was created to demonstrate my ability to work with real Malaysian automotive data, 
+            perform structured analysis, and communicate insights through a clean and interactive interface.  
+            It serves as a portfolio piece showcasing my technical, analytical, and storytelling strengths.
+        </p>
+
+    </div>
+</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
